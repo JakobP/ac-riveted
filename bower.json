@@ -1,10 +1,11 @@
 {
-  "name": "riveted",
-  "main": "riveted.js",
-  "version": "0.6.0",
+  "name": "ac-riveted",
+  "main": "ac-riveted.js",
+  "version": "0.6.1",
   "homepage": "http://riveted.parsnip.io/",
   "authors": [
     "Rob Flaherty"
+    "Jakob Pedersen"
   ],
   "description": "Google Analytics plugin to track active/engaged time on page.",
   "moduleType": [

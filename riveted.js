@@ -1,7 +1,7 @@
 /*!
  * @preserve
- * riveted.js | v0.6.0
- * Copyright (c) 2015 Rob Flaherty (@robflaherty)
+ * riveted.js | v0.6.1
+ * Copyright (c) 2015 Rob Flaherty (@robflaherty), Jakob Pedersen
  * Licensed under the MIT license
  */
 
@@ -262,6 +262,21 @@ var riveted = (function() {
 
       clearTimeout(idleTimer);
       idleTimer = setTimeout(setIdle, idleTimeout * 1000 + 100);
+    }
+
+    // Turn nonInteraction on/off after init. This is useful for changing the bouncerate and session time you see in GA
+    // Value must be true or false
+    function setNonInteraction(value){
+      console.log(value);
+      if (value === false || value === 'false') {
+        nonInteraction = false;
+      }
+      else if (value === true || value === 'true') {
+        nonInteraction = true;
+      }
+      else {
+        throw "value can only be true or false";
+      }
     }
 
     return {
