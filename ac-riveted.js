@@ -267,7 +267,6 @@ var riveted = (function() {
     // Turn nonInteraction on/off after init. This is useful for changing the bouncerate and session time you see in GA
     // Value must be true or false
     function setNonInteraction(value){
-      console.log(value);
       if (value === false || value === 'false') {
         nonInteraction = false;
       }
