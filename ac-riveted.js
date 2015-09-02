@@ -285,7 +285,8 @@ var riveted = (function() {
       setIdle: setIdle,
       on: turnOn,
       off: turnOff,
-      reset: resetRiveted
+      reset: resetRiveted,
+      setNonInteraction: setNonInteraction
     };
 
   })();
